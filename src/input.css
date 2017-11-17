@@ -1,0 +1,87 @@
+body{
+    background-color: #4acbdc;
+}
+.container{
+    margin: 0 auto;
+
+}
+.container .form-style-5{
+    max-width: 500px;
+    padding: 10px 20px;
+    background: #f4f9fa;
+    margin-left: 60px;
+    margin-top: 40px;
+    float: left;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container .form-style-5 fieldset{
+    border: none;
+}
+.container .form-style-5 legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.container .form-style-5 label {
+    display: block;
+    margin-bottom: 8px;
+}
+.container .form-style-5 input[type="text"],
+.container .form-style-5 input[type="email"],
+.container .form-style-5 input[type="number"]{
+
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.container .form-style-5 input[type="text"]:focus,
+.container .form-style-5 input[type="email"]:focus,
+.container .form-style-5 input[type="number"]:focus{
+    background: #fff5bb;
+}
+.container .form-style-5 .number {
+    background: #1abc9c;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.container .form-style-5 input[type="submit"],
+.container .form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #fd5429;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #fc4a1a;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+.container .form-style-5 input[type="submit"]:hover,
+.container .form-style-5 input[type="button"]:hover
+{
+    background: #fc6d1a;
+}

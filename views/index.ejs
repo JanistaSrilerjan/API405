@@ -1,0 +1,41 @@
+<% include header %>
+    <!--เรียก header.ejs-->
+    <!-- <h2>index.ejs: root view template</h2>-->
+    <!--<h2><%= title %></h2>-->
+    <div class="container">
+        <div class="form-style-5">
+            <form method="POST" action="/user">
+                <fieldset>
+                    <legend>Add new Customer:</legend>
+                    <input type="text" name="name" placeholder="NAME">
+                    <input type="number" name="age" placeholder="AGE">
+                    <input type="email" name="email" placeholder="EMAIL">
+                    <input type="text" name="token" placeholder="TOKEN"> 
+                </fieldset>
+                <input type="submit" value="Add" />
+            </form>
+        </div>
+        <div class="form-style-6">
+            <table cellspacing='0'>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>EMAIL</th>
+                </tr>
+            <thead>
+            <tbody>
+                <% users.forEach( (user) => { %>
+                    <tr>
+                        <td><%= user.id %></td>
+                        <td><%= user.name %></td>
+                        <td><%= user.age %></td>
+                        <td><%= user.email %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+            <table/>
+        </div>
+    </div>  
+<% include footer %>
