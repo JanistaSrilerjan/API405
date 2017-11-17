@@ -137,6 +137,6 @@ app.get('/api/posts/user/:id', function (req, res) { //หา เฉพาะ us
     });
 });
 
-app.listen(port, hostname, () => {
+app.listen(port,  () => {
     console.log('Magic happens at http://localhost:' + port);
 });
