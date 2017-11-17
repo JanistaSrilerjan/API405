@@ -128,7 +128,7 @@ exports.remove = function (req, res) { //แบบที่ 2
 
     User.remove({ id: req.params.id }, function (err, user) {
         if (err) return res.status(500).send(err);
-        res.status(200).send("User " + req.body.name + " was deleted.");
+        res.status(200).send("User was deleted.");
     });
 
 };
